@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Treact</title>
     <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
     <script src="https://kit.fontawesome.com/c8e4d183c2.js" crossorigin="anonymous"></script>
 </head>
 
@@ -15,30 +16,30 @@
         <nav>
             <div class="row">
                 <div class="nav__wrapper">
-                    <div class="logo__wrapper">
+                    <a href="#" class="logo__wrapper">
                         <figure class="nav__logo">
                             <img src="./assets/logo.svg" alt="">
                         </figure>
                         <h2 class="nav__logo--name">Treact</h2>
-                    </div>
+                    </a>
                     <ul class="nav__links">
                         <li>
-                            <a class="nav__link" href="">About</a>
+                            <a class="link__hover-effect link__hover-effect--purple nav__link" href="#">About</a>
                         </li>
                         <li>
-                            <a class="nav__link" href="">Blog</a>
+                            <a class="link__hover-effect link__hover-effect--purple nav__link no__cursor" href="">Blog</a>
                         </li>
                         <li>
-                            <a class="nav__link" href="">Pricing</a>
+                            <a class="link__hover-effect link__hover-effect--purple nav__link" href="#plans">Pricing</a>
                         </li>
                         <li>
-                            <a class="nav__link" href="">Contact Us</a>
+                            <a class="link__hover-effect link__hover-effect--purple nav__link no__cursor" href="">Contact Us</a>
                         </li>
                         <li>
-                            <a class="nav__link" href="">Login</a>
+                            <a class="link__hover-effect link__hover-effect--purple nav__link no__cursor" href="">Login</a>
                         </li>
                         <li>
-                            <a class="nav__link nav__link--primary" href="">Sign Up</a>
+                            <a class="link__hover-effect link__hover-effect--purple nav__link--primary no__cursor" href="">Sign Up</a>
                         </li>
                     </ul>
                 </div>
@@ -56,8 +57,8 @@
                                 variety of pages and components.
                             </p>
                             <form class="header__form" action="">
-                                <input type="email" placeholder="Your E-mail Address" class="header__input">
-                                <button class="btn">Get Started</button>
+                                <input type="email" placeholder="Your E-mail Address" class="header__input" onclick="changeBorderColor()">
+                                <button class="btn header__btn" onclick="removeBorderColor()">Get Started</button>
                             </form>
                             <div class="customer__wrapper">
                                 <p class="customer__para">OUR TRUSTED CUSTOMERS</p>
@@ -168,7 +169,7 @@
                                 exercitationem voluptate velit sapiente minima Lorem ipsum dolor sit amet consectetur,
                                 adipisicing elit.
                             </p>
-                            <button class="btn section__btn">Learn More</button>
+                            <button class="btn section__btn no__cursor">Learn More</button>
                         </div>
                         <figure class="work__img--wrapper">
                             <img src="./assets/website.png" class="work__img" alt="">
@@ -199,14 +200,99 @@
                                 <h2 class="step__number">02</h2>
                                 <div class="step__description">
                                     <h3 class="step__title">Download</h3>
-                                    <p class="step__para">Browse and download the template that you like from the marketplace.</p>
+                                    <p class="step__para">Browse and download the template that you like from the
+                                        marketplace.</p>
                                 </div>
                             </div>
                             <div class="step">
                                 <h2 class="step__number">03</h2>
                                 <div class="step__description">
                                     <h3 class="step__title">Run</h3>
-                                    <p class="step__para">Follow the instructions to setup and customize the template to your needs.</p>
+                                    <p class="step__para">Follow the instructions to setup and customize the template to
+                                        your needs.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="plans">
+            <div class="container">
+                <div class="row">
+                    <div class="plans__description">
+                        <h3 class="section__header">PRICING</h3>
+                        <h2 class="section__title">Reasonable & Flexible <span class="purple">Plans.</span></h2>
+                        <p class="section__para plans__description--para">Lorem ipsum dolor sit amet consectetur
+                            adipisicing elit. Officia, modi
+                            veritatis obcaecati sit quam aut laborum.
+                        </p>
+                    </div>
+                    <div class="plans">
+                        <div class="plan">
+                            <div class="plan1__top"></div>
+                            <div class="plan__wrapper">
+                                <div class="plan__header">
+                                    <h2 class="plan__type">PERSONAL</h2>
+                                    <h1 class="plan__price">$17.99</h1>
+                                    <h3 class="plan__frequency">MONTHLY</h3>
+                                </div>
+                                <hr>
+                                <div class="plan__content">
+                                    <h2 class="plan__subheader">For Individuals</h2>
+                                    <p class="plan__feature">30 Templates</p>
+                                    <p class="plan__feature">7 Landing Pages</p>
+                                    <p class="plan__feature">12 Internal Pages</p>
+                                    <p class="plan__feature">Basic Assistance</p>
+                                </div>
+                                <hr>
+                                <div class="plan__button">
+                                    <button class="plan1__btn plan__btn no__cursor">BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan plan2">
+                            <div class="plan2__top"></div>
+                            <div class="plan__wrapper">
+                                <div class="plan__header">
+                                    <h2 class="plan__type">BUSINESS</h2>
+                                    <h1 class="plan__price">$37.99</h1>
+                                    <h3 class="plan__frequency plan2__frequency">MONTHLY</h3>
+                                </div>
+                                <hr>
+                                <div class="plan__content">
+                                    <h2 class="plan__subheader">For Small Businesses</h2>
+                                    <p class="plan__feature plan2__feature">60 Templates</p>
+                                    <p class="plan__feature plan2__feature">15 Landing Pages</p>
+                                    <p class="plan__feature plan2__feature">22 Internal Pages</p>
+                                    <p class="plan__feature plan2__feature">Priority Assistance</p>
+                                </div>
+                                <hr>
+                                <div class="plan__button">
+                                    <button class="plan2__btn plan__btn no__cursor">BUY NOW</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="plan">
+                            <div class="plan3__top"></div>
+                            <div class="plan__wrapper">
+                                <div class="plan__header">
+                                    <h2 class="plan__type">ENTERPRISE</h2>
+                                    <h1 class="plan__price">$57.99</h1>
+                                    <h3 class="plan__frequency">MONTHLY</h3>
+                                </div>
+                                <hr>
+                                <div class="plan__content">
+                                    <h2 class="plan__subheader">For Large Companies</h2>
+                                    <p class="plan__feature">90 Templates</p>
+                                    <p class="plan__feature">27 Landing Pages</p>
+                                    <p class="plan__feature">37 Internal Pages</p>
+                                    <p class="plan__feature">Personal Assistance</p>
+                                </div>
+                                <hr>
+                                <div class="plan__button">
+                                    <button class="plan3__btn plan__btn no__cursor">BUY NOW</button>
                                 </div>
                             </div>
                         </div>
@@ -215,6 +301,103 @@
             </div>
         </section>
     </main>
+
+    <footer>
+        <div class="row">
+            <div class="links">
+                <div class="link">
+                    <h3 class="link__title">MAIN</h3>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Blog</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">FAQs</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Support</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">About Us</a>
+                    </li>
+                </div>
+                <div class="link">
+                    <h3 class="link__title">PRODUCT</h3>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Log In</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Personal</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Business</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Team</a>
+                    </li>
+                </div>
+                <div class="link">
+                    <h3 class="link__title">PRESS</h3>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Logos</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Events</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Stories</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Office</a>
+                    </li>
+                </div>
+                <div class="link">
+                    <h3 class="link__title">TEAM</h3>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Career</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Founders</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Culture</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Onboarding</a>
+                    </li>
+                </div>
+                <div class="link">
+                    <h3 class="link__title">LEGAL</h3>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">GDPR</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Privacy Policy</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Terms of Service</a>
+                    </li>
+                    <li class="footer__link--wrapper">
+                        <a href="" class="footer__link no__cursor link__hover-effect--white link__hover-effect">Disclaimer</a>
+                    </li>
+                </div>
+            </div>
+            <hr>
+            <div class="footer__info">
+                <div class="footer__logo--wrapper">
+                    <figure class="footer__logo">
+                        <img src="./assets/logo2.svg" alt="">
+                    </figure>
+                    <h2 class="footer__logo--name">Treact Inc.</h2>
+                </div>
+                <p class="footer__para">&copy; 2018 Treact Inc. All Rights Reserved.</p>
+                <div class="social__links">
+                    <i class="fab fa-facebook-f social__link no__cursor"></i>
+                    <i class="fab fa-twitter social__link no__cursor"></i>
+                    <i class="fab fa-youtube social__link no__cursor"></i>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
