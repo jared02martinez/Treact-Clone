@@ -39,9 +39,37 @@
                             <a class="link__hover-effect link__hover-effect--purple nav__link no__cursor" href="">Login</a>
                         </li>
                         <li>
-                            <a class="link__hover-effect link__hover-effect--purple nav__link--primary no__cursor" href="">Sign Up</a>
+                            <a class="nav__link--primary no__cursor" href="">Sign Up</a>
                         </li>
                     </ul>
+                    <button class="btn__menu" onclick="openMenu()">
+                        <i class="fas fa-bars"></i>
+                    </button>
+                    <div class="menu__backdrop">
+                        <button class="btn__menu btn__menu--closed" onclick="closeMenu()">
+                            <i class="fas fa-times"></i>
+                        </button>
+                        <ul class="menu__links">
+                            <li class="menu__list">
+                                <a class="menu__link link__hover-effect link__hover-effect--purple" href="#" onclick="closeMenu()">About</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no__cursor link__hover-effect link__hover-effect--purple" href="" onclick="closeMenu()">Blog</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link link__hover-effect link__hover-effect--purple" href="#plans" onclick="closeMenu()">Pricing</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no__cursor link__hover-effect link__hover-effect--purple" href="" onclick="closeMenu()">Contact Us</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no__cursor link__hover-effect link__hover-effect--purple" href="" onclick="closeMenu()">Pricing</a>
+                            </li>
+                            <li class="menu__list">
+                                <a class="menu__link no__cursor menu__link--primary" href="" onclick="closeMenu()">Sign Up</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </nav>
@@ -182,7 +210,7 @@
         <section id="steps">
             <div class="container">
                 <div class="row">
-                    <div class="section__wrapper">
+                    <div class="section__wrapper steps__wrapper">
                         <figure class="steps__img--wrapper">
                             <img src="./assets/laptop.png" alt="" class="steps__img">
                         </figure>

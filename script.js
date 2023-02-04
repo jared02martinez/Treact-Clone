@@ -5,3 +5,11 @@ function changeBorderColor() {
 function removeBorderColor() {
     document.body.classList.remove("input__active")
 }
+
+function openMenu() {
+    document.body.classList += " menu--open"
+}
+
+function closeMenu() {
+    document.body.classList.remove("menu--open")
+}
