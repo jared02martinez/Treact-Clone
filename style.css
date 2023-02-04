@@ -730,6 +730,12 @@ footer {
     }
 }
 
+/*
+
+RESPONSIVENESS
+
+*/
+
 @media (max-width: 1280px) {
     .header__title {
         font-size: 36px;
@@ -747,7 +753,7 @@ footer {
         justify-content: space-between;
     }
 }
-/* bars */
+
 @media (max-width: 1024px) {
 
     .nav__link {
